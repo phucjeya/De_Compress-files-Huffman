@@ -91,8 +91,8 @@ void traverseHuffmanTree(Tree *root, string prev, string toAppend, map<unsigned 
     }
     if (root->right != NULL)
     {
-        traverseHuffmanTree(root->right, prev, "1", codemap);
-    }
+        traverseHuffmanTree(root->right, prev, "1", codemap);    }
+
 
     if (root->left != NULL)
     {
@@ -321,9 +321,9 @@ int main()
 {   
     //fp state?
   
-   char dEI[100] = "test.txt";
-   char dEO[100] = "test1.txt";
-   char dDO[100] = "decoded.txt";
+   char dEI[100] = "test.mp3";
+   char dEO[100] = "test1.mp3";
+   char dDO[100] = "decoded.mp3";
   
     map<unsigned char, string> codes;
     compressFile(dEI, dEO, codes);
